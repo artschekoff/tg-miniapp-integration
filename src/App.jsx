@@ -44,7 +44,7 @@ function App() {
       }
 
       const response = await fetch('https://localdevapi.roxl.net/api/auth/check', {
-        method: 'POST',
+        method: 'GET',
         headers: { 'Authorization': `Bearer ${authResponse.token}` }
       })
 
